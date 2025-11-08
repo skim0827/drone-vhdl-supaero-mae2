@@ -14,13 +14,13 @@ architecture sim of tb_pwm is
     signal pwm_out  : std_logic;
 
 -- DUT instantiate 
-begin 
-    uut : entity work.pwm 
-        port map (
-            clk     => clk,
-            duty    => duty,
-            pwm_out => pwm_out
-        );
+    begin 
+        uut : entity work.pwm 
+            port map (
+                clk     => clk,
+                duty    => duty,
+                pwm_out => pwm_out
+            );
 -- Stimulus process and clock (50 Mhz, 20 ns) process 
     clk_process : process 
     begin 
@@ -37,7 +37,7 @@ begin
         duty    <= to_unsigned(0, duty'length);    wait for 40 ms;
         duty    <= to_unsigned(128, duty'length);  wait for 40 ms; 
         duty    <= to_unsigned(255, duty'length);  wait for 40 ms;
-        wait; -- stop 
+        wait; -- process alive forever  
     end process;
 
 end architecture sim ; 

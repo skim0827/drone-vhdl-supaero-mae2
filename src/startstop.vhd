@@ -22,7 +22,7 @@ architecture rtl of startstop is
 
 
 begin     
-    process(clk);
+    process(clk)
     begin 
         if rising_edge(clk) then 
             if reset = '1' then 
@@ -36,12 +36,12 @@ begin
                             state <= RUN;
 
                         when RUN =>
-                            state <= IDLE; 
-
-                end if 
-                button_prev <= button ; -- why would you use signal for button_prev ? shoudn't it be variable ? 
-            end if 
-        end if 
+                            state <= IDLE;
+                     end case ; 
+                end if ;
+                button_prev <= button ; 
+            end if ; 
+        end if ;
     end process;
     is_running <= '1' when state = RUN else '0';
     
