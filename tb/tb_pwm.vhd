@@ -10,17 +10,24 @@ end entity tb_pwm;
 architecture sim of tb_pwm is 
 -- Signal declarations 
     signal clk      : std_logic := '0';
-    signal duty     : unsigned(7 downto 0) := (others => '0');
-    signal pwm_out  : std_logic;
+    signal rst      : std_logic := '0';
+
+    signal pwm_slw  : std_logic;
+    signal pwm_std  : std_logic;
+    signal pwm_fst  : std_logic;
 
 -- DUT instantiate 
     begin 
         uut : entity work.pwm 
             port map (
                 clk     => clk,
-                duty    => duty,
-                pwm_out => pwm_out
+                rst     => rst,
+
+                pwm_slw => pwm_slw,
+                pwm_std => pwm_std,
+                pwm_fst => pwm_fst
             );
+
 -- Stimulus process and clock (50 Mhz, 20 ns) process 
     clk_process : process 
     begin 
@@ -32,12 +39,18 @@ architecture sim of tb_pwm is
         end loop ;
     end process;
 
-    stim_proc : process 
+    stim_process: process 
     begin 
-        duty    <= to_unsigned(0, duty'length);    wait for 40 ms;
-        duty    <= to_unsigned(128, duty'length);  wait for 40 ms; 
-        duty    <= to_unsigned(255, duty'length);  wait for 40 ms;
-        wait; -- process alive forever  
+        rst <= '1'; 
+        wait for 50 ns;
+        rst <= '0'; 
+        wait ; 
+    end process; 
+
+    end_sim : process 
+    begin 
+        wait for 100 ms;
+        assert false report "Simulation ended" severity failure; 
     end process;
 
 end architecture sim ; 
