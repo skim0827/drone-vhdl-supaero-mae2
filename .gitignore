@@ -1,0 +1,27 @@
+# -------------------------------
+# Vivado build and project files
+# -------------------------------
+
+.Xil/
+.sim/
+.vivado_*/
+*.jou
+*.log
+*.pb
+*.str 
+
+
+# -------------------------------
+# Simulation and temporary files
+# -------------------------------
+sim/
+waves/
+*.vcd
+*.cf
+*.o
+
+# -------------------------------
+# Vivado project backups
+# -------------------------------
+*.backup.jou
+*.backup.log 
