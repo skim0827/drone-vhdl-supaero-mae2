@@ -9,7 +9,7 @@ end entity tb_startstop;
 architecture sim of tb_startstop is 
 -- Signal declarations 
     signal clk      : std_logic := '0';
-    signal reset    : std_logic := '0';
+    signal rst    : std_logic := '0';
     signal button   : std_logic := '0';
     signal is_running  : std_logic;
 
@@ -18,7 +18,7 @@ architecture sim of tb_startstop is
         uut : entity work.startstop 
             port map (
                 clk     => clk,
-                reset    => reset,
+                rst    => rst,
                 button  => button, 
                 is_running => is_running
             );
@@ -37,15 +37,15 @@ architecture sim of tb_startstop is
         stim_proc : process 
         begin 
         -- apply reset 
-            reset <= '1'; wait for 40 ns;
-            reset <= '0'; wait for 100 ns; 
+            rst <= '1'; wait for 40 ns;
+            rst <= '0'; wait for 100 ns; 
 
         -- stimulate button press 
-            button <= '1'; wait for 40 ms;
-            button <= '0'; wait for 1 ms;
+            button <= '1'; wait for 20 ms;
+            button <= '0'; wait for 20 ms;
 
-            button <= '1'; wait for 40 ms;
-            button <= '0'; wait for 1 ms; 
+            button <= '1'; wait for 20 ms;
+            button <= '0'; wait for 20 ms; 
 
         -- observe output 
 
