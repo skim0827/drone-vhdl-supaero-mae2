@@ -13,38 +13,37 @@ end entity startstop;
 
 architecture rtl of startstop is 
 -- FSM state 
-    type state_type is (IDLE, RUN, STOPPED);
-    signal state : state_type := IDLE; -- initialization
-
-
-    signal button_prev : std_logic := '0'; 
-
+    type state_type is (IDLE1,IDLE2, IDLE3, RUN);
+    signal state : state_type := IDLE2; -- initialization
 begin     
-    process(clk)
+    process(clk, rst)
     begin 
-        if rising_edge(clk) then 
-            if rst = '1' then 
-                state <= IDLE;
-                button_prev <= '0';
-            else 
-            -- button edge detection 
-                if (button = '1' and button_prev = '0') then  -- press 
-                        if state = RUN then 
-                            state <= STOPPED; -- stops robot when it is pressed 
-                        elsif state = IDLE then 
-                            state <= IDLE;
-                        end if ;
-                elsif (button = '0' and button_prev = '1') then -- released 
-                        if state = IDLE then
-                            state <= RUN; -- starts robot when it's released 
-                        elsif state = STOPPED then 
-                            state <= IDLE;
-                        end if ;
-                end if ;
-                button_prev <= button ; 
-            end if ; 
+        if rst = '1' then 
+            state <= IDLE2; 
+        elsif rising_edge(clk) then 
+            case state is 
+                when IDLE2 => 
+                    if button = '1' then -- PRESSED 
+                        state <= IDLE3 ;
+                    end if;
+
+                when IDLE3 =>
+                    if button = '0' then -- PRESSED 
+                        state <= RUN ; 
+
+                    end if; 
+                when RUN  =>
+                    if button = '1' then -- PRESSED 
+                        state <= IDLE1; 
+
+                    end if;   
+                when IDLE1 =>
+                    if button = '0' then -- PRESSED 
+                        state <= IDLE2; 
+
+                    end if;               
+            end case ; 
         end if ;
     end process;
     is_running <= '1' when state = RUN else '0';
-    
 end architecture rtl;

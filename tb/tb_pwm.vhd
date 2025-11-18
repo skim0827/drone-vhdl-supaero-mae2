@@ -33,9 +33,9 @@ architecture sim of tb_pwm is
     begin 
         while true loop 
             clk     <= '0';
-            wait for 10 ns; 
+            wait for 5 ns; 
             clk     <= '1';
-            wait for 10 ns;
+            wait for 5 ns;
         end loop ;
     end process;
 

@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Nov  3 17:09:25 2025
-# Process ID         : 707027
+# Start of session at: Mon Nov 17 11:57:38 2025
+# Process ID         : 155158
 # Current directory  : /home/sonia/OneDrive/MAE2/VHDL/drone
 # Command line       : vivado
 # Log file           : /home/sonia/OneDrive/MAE2/VHDL/drone/vivado.log
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 22.04.5 LTS
 # Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-# CPU Frequency      : 400.000 MHz
+# CPU Frequency      : 3502.462 MHz
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 16432 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 18580 MB
-# Available Virtual  : 12100 MB
+# Available Virtual  : 8850 MB
 #-----------------------------------------------------------
 start_gui
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.0/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
@@ -58,6 +58,10 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.0/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.1/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/v80/1.0/board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
@@ -94,82 +98,36 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.0/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.1/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/v80/1.0/board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.4/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek385/1.0/board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.2/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.3/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /opt/Xilinx/2025.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
-INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-create_project drone_startstop /home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop -part xc7a35tcpg236-1
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.1/Vivado/data/ip'.
-set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property  ip_repo_paths  /home/sonia/RP/ip_repo [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sonia/RP/ip_repo'.
-add_files -norecurse /home/sonia/OneDrive/MAE2/VHDL/drone/src/startstop.vhd
-update_compile_order -fileset sources_1
-set_property target_language VHDL [current_project]
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_startstop.vhd
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/startstop.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_startstop.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/startstop.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/startstop.vhd:]
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_startstop'
-INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-12493] Simulation top is 'tb_pwm'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_startstop' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
-xvhdl --incr --relax -prj tb_startstop_vhdl.prj
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/src/startstop.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'startstop'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_startstop.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_startstop'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj tb_pwm_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_pwm'
 Waiting for jobs to finish...
 No pending jobs, compilation finished.
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
-xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_startstop_behav xil_defaultlib.tb_startstop -log elaborate.log
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_pwm_behav xil_defaultlib.tb_pwm -log elaborate.log
 Vivado Simulator v2025.1.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /opt/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_startstop_behav xil_defaultlib.tb_startstop -log elaborate.log 
+Running: /opt/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_pwm_behav xil_defaultlib.tb_pwm -log elaborate.log 
 Using 8 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
@@ -182,17 +140,17 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture rtl of entity xil_defaultlib.startstop [startstop_default]
-Compiling architecture sim of entity xil_defaultlib.tb_startstop
-Built simulation snapshot tb_startstop_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Compiling architecture rtl of entity xil_defaultlib.pwm [pwm_default]
+Compiling architecture sim of entity xil_defaultlib.tb_pwm
+Built simulation snapshot tb_pwm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_startstop_behav -key {Behavioral:sim_1:Functional:tb_startstop} -tclbatch {tb_startstop.tcl} -log {simulate.log}"
+   with args "tb_pwm_behav -key {Behavioral:sim_1:Functional:tb_pwm} -tclbatch {tb_pwm.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source tb_startstop.tcl
+source tb_pwm.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -203,51 +161,69 @@ source tb_startstop.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_startstop_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_pwm_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 10725.414 ; gain = 67.121 ; free physical = 291 ; free virtual = 9941
-run all
-run: Time (s): cpu = 00:01:28 ; elapsed = 00:01:12 . Memory (MB): peak = 10757.500 ; gain = 32.086 ; free physical = 274 ; free virtual = 9977
-run 120 ms
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 10153.652 ; gain = 75.242 ; free physical = 931 ; free virtual = 7412
+run 200 ms
+Failure: Simulation ended
+Time: 100 ms  Iteration: 0  Process: /tb_pwm/end_sim  File: /home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd
+$finish called at time : 100 ms : File "/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd" Line 53
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
 close_sim
-INFO: xsimkernel Simulation Memory Usage: 262092 KB (Peak: 319624 KB), Simulation CPU Usage: 35850 ms
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_startstop'
-INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-12493] Simulation top is 'tb_pwm'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_startstop' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
-xvhdl --incr --relax -prj tb_startstop_vhdl.prj
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj tb_pwm_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_pwm'
 Waiting for jobs to finish...
 No pending jobs, compilation finished.
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
-xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_startstop_behav xil_defaultlib.tb_startstop -log elaborate.log
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_pwm_behav xil_defaultlib.tb_pwm -log elaborate.log
 Vivado Simulator v2025.1.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /opt/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_startstop_behav xil_defaultlib.tb_startstop -log elaborate.log 
+Running: /opt/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_pwm_behav xil_defaultlib.tb_pwm -log elaborate.log 
 Using 8 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.pwm [pwm_default]
+Compiling architecture sim of entity xil_defaultlib.tb_pwm
+Built simulation snapshot tb_pwm_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_startstop/drone_startstop.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_startstop_behav -key {Behavioral:sim_1:Functional:tb_startstop} -tclbatch {tb_startstop.tcl} -log {simulate.log}"
+   with args "tb_pwm_behav -key {Behavioral:sim_1:Functional:tb_pwm} -tclbatch {tb_pwm.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source tb_startstop.tcl
+source tb_pwm.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -258,8 +234,109 @@ source tb_startstop.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_startstop_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_pwm_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 10758.500 ; gain = 1.000 ; free physical = 3089 ; free virtual = 10000
-run all
-run: Time (s): cpu = 00:01:22 ; elapsed = 00:01:15 . Memory (MB): peak = 10758.500 ; gain = 0.000 ; free physical = 749 ; free virtual = 9881
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 10211.656 ; gain = 21.793 ; free physical = 1003 ; free virtual = 7486
+run 200 ms
+Failure: Simulation ended
+Time: 100 ms  Iteration: 0  Process: /tb_pwm/end_sim  File: /home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd
+$finish called at time : 100 ms : File "/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd" Line 53
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_pwm'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj tb_pwm_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_pwm'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_pwm_behav xil_defaultlib.tb_pwm -log elaborate.log
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_pwm_behav xil_defaultlib.tb_pwm -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.pwm [pwm_default]
+Compiling architecture sim of entity xil_defaultlib.tb_pwm
+Built simulation snapshot tb_pwm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sonia/OneDrive/MAE2/VHDL/drone/sim/drone_pwm/drone_pwm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_pwm_behav -key {Behavioral:sim_1:Functional:tb_pwm} -tclbatch {tb_pwm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_pwm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_pwm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 10244.668 ; gain = 17.934 ; free physical = 976 ; free virtual = 7539
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/tb/tb_pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/sonia/OneDrive/MAE2/VHDL/drone/src/pwm.vhd:]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.1.0
+  ****** Build date   : May 13 2025-21:15:27
+    **** Build number : 2025.1.1747163727
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AB5007Ajsn-Basys3-210183AB4886A" may be locked by another hw_server.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 17 12:08:32 2025...

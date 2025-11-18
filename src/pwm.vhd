@@ -55,4 +55,6 @@ begin
     pwm_fst <= '1' when pwm_count < to_unsigned(75, pwm_count'length) else '0' ;
 
 
+
+
 end architecture rtl; 

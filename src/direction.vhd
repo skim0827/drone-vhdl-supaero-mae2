@@ -25,9 +25,10 @@ begin
         if rst = '1' then 
             motorLeft <= '0'; 
             motorRight <= '0';
+        end if;
 
 
-        elsif state_move = '1' then 
+        if state_move = '1' then 
             if sensorLeft = '0' and sensorRight = '0' then -- move straight 
                 motorLeft <= refPWMstd ;
                 motorRight <= refPWMstd ;
@@ -39,11 +40,11 @@ begin
                 motorLeft <= refPWMslw; 
 
             else -- both 1 
-                motorRight <= '0';
-                motorLeft <= '0'; 
+                motorRight <= refPWMslw;
+                motorLeft <= refPWMslw; 
 
             end if;
-        else   
+        else 
             motorLeft <= '0' ; 
             motorRight <= '0' ;
 
